@@ -57,7 +57,7 @@ func PodWithDeletionTimestamp(pod *v1.Pod) string {
 	return Pod(pod) + deletionTimestamp
 }
 
-// Pods returns a string representation a list of pods in a human
+// Pods returns a string representation of a list of pods in a human
 // readable format.
 func Pods(pods []*v1.Pod) string {
 	return aggregatePods(pods, Pod)
